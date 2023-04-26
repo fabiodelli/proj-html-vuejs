@@ -90,4 +90,18 @@
         }
         
     }
+    
+    .bg-white{
+        position: relative;
+        .brand{
+            z-index: 1;
+            position: absolute;
+            top: 20%;
+            left: 25%;
+        }
+        img{
+            width: 80px;
+            margin-right: 2rem;
+        }
+    }
 }
