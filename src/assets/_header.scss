@@ -1,48 +1,93 @@
 @use'./color' as *;
+
 .header{
     background: $header;
     
     .container_70{
         margin: auto;
         width: 60%;
-        height: 70px;
-        justify-content: space-between;
-        align-items: center;
-
-        .left{
-            img{
-                width: 5rem;
-            }
-        }
-        .center{
-            display: flex;
+        .header_up{
+            height: 70px;
+            justify-content: space-between;
             align-items: center;
-            ul{
-                justify-content: center;
+            display: flex;
+
+            .left{
+                img{
+                    width: 5rem;
+                }
+            }
+            .center{
                 display: flex;
-                gap: 1rem;
                 align-items: center;
-                padding: 0;
-                margin: 0;
-                
-                li{
-                    list-style: none;
+                ul{
+                    justify-content: center;
+                    display: flex;
+                    gap: 1rem;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    
+                    li{
+                        list-style: none;
+                    }
+                }
+            }
+            .right{
+                gap: 1rem;
+                .toggle_nav{
+                    background: $button;
+                    width: 30px;
+                    aspect-ratio: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    border: 1px solid rgb(179, 179, 179);
+                    box-shadow: 0 3px $button;
+                    color: $primary;
                 }
             }
         }
-        .right{
-            gap: 1rem;
-            .toggle_nav{
-                background: $button;
-                width: 30px;
-                aspect-ratio: 1;
+        .header_bottom{
+            display: flex;
+            margin-top: 2rem;
+            .header_bl{
+                width: 60%;
                 display: flex;
-                align-items: center;
+                flex-direction: column;
                 justify-content: center;
-                border-radius: 5px;
-                border: 1px solid rgb(179, 179, 179);
-                box-shadow: 0 3px $button;
+                .dev{
+                    background: $button;
+                    border-radius: 15px;
+                    border: 1px solid rgb(179, 179, 179);
+                    color: $primary;
+                    width: fit-content;
+                    padding: 0 5px;
+                    
+                }
+                .get_start{
+                    background: $primary;
+                    color: white;
+                    padding: 0 10px;
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                }
+                .Doc{
+                    background: white;
+                    color: $primary;
+                    padding: 0 10px;
+                    margin-right: 1rem;
+                    border-radius: 5px;
+                }
+            }
+            .header_br{
+                width: 40%;
+                img{
+                    max-width: 100%;
+                }
             }
         }
+        
     }
 }
