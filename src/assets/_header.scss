@@ -2,6 +2,7 @@
 
 .header{
     background: $header;
+    border-bottom: 1px solid rgb(219, 219, 219);
     
     .container_70{
         margin: auto;
@@ -49,10 +50,11 @@
                 }
             }
         }
-        .header_bottom{
+        .jumbo{
             display: flex;
-            margin-top: 2rem;
-            .header_bl{
+            padding: 3rem 0;
+            
+            .jumbo_left{
                 width: 60%;
                 display: flex;
                 flex-direction: column;
@@ -81,7 +83,7 @@
                     border-radius: 5px;
                 }
             }
-            .header_br{
+            .jumbo_right{
                 width: 40%;
                 img{
                     max-width: 100%;
@@ -91,17 +93,21 @@
         
     }
     
-    .bg-white{
-        position: relative;
-        .brand{
-            z-index: 1;
-            position: absolute;
-            top: 20%;
-            left: 25%;
-        }
+}
+.bg-white{
+    position: relative;
+    img{
+        width: 100%;
+        height: 100px;
+    }
+    .brand{
+        z-index: 1;
+        position: absolute;
+        top: -2vh;
+        left: calc((100% - (804px - 4rem))/2);
         img{
-            width: 80px;
-            margin-right: 2rem;
+            width: 70px;
+            margin-right: 4rem;
         }
     }
 }
