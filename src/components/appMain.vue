@@ -1,58 +1,10 @@
 <script>
 export default {
     name: 'appMain',
+    props:{ keyFeatures:Array,plans:Array},
     data() {
         return {
-            keyFeatures:[
-                {
-                    "featureImg":"fa-solid fa-layer-group",
-                    "feature":"Modular",
-                    "p":"Composed in a pseudo-latin language which more or less corresponds."
-                },
-                {
-                    /* "feature-img":"fa-solid fa-airplay", */
-                    "featureImg":"fa-solid fa-layer-group",
-                    "feature":"Responsive",
-                    "p":"Composed in a pseudo-latin language which more or less corresponds."
-                },
-                {
-                    /* "feature-img":"fa-regular fa-sparkle", */
-                    "featureImg":"fa-solid fa-layer-group",
-                    "feature":"Customizable",
-                    "p":"Composed in a pseudo-latin language which more or less corresponds."
-                },
-                {
-                    /* "feature-img":"fa-solid fa-maximize", */
-                    "featureImg":"fa-solid fa-layer-group",
-                    "feature":"Scalable",
-                    "p":"Composed in a pseudo-latin language which more or less corresponds."
-                },
-
-            ],
-            
-            plans:[
-                {
-                    type:"Basic",
-                    price:"9.00",
-                    p:"All the basics for the business that are just getting started",
-                    features:['Full Access','Enhanced Security','Source Files','1 Domain Free','Enhanced Security']
-
-                },
-                {
-                    type:"Business",
-                    price:"39.00",
-                    p:"Better for growing business that want more customers",
-                    /* feature:['Full Access','Enhanced Security','Source Files','1 Domain Free','Enhanced Security'] */
-
-                },
-                {
-                    type:"Enterprise",
-                    price:"79.00",
-                    p:"Advanced features for pros who need more customization",
-                    /* feature:['Full Access','Enhanced Security','Source Files','1 Domain Free','Enhanced Security'] */
-
-                },
-            ]    
+      
         }
     }
 }

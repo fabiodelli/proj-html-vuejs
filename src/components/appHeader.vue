@@ -1,6 +1,7 @@
 <script>
 export default {
     name: 'appHeader',
+    props:{ navbarLinks:Array,partners:Array},
     data() {
         return {
             navbarLinks:['LANDING','PAGES','DOCS'],

@@ -1,11 +1,10 @@
 <script>
 export default {
     name: 'appFooter',
+    props:{ company:Array,usefullLinks:Array,payments:Array},
     data() {
         return {
-            company: ['About', 'Services', 'team', 'Pricing', 'Project', 'Careers', 'Blog', 'Login'],
-            usefullLinks: ['Terms of service', 'Privacy Policy', 'Documentation', 'Changelog', 'Components'],
-            payments: ['/img/american-ex.png', '/img/discover.png', '/img/master-card.png', '/img/paypal.png', '/img/visa.png']
+           
         }
     }
 }
