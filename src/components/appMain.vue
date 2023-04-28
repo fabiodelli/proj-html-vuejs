@@ -2,9 +2,58 @@
 export default {
     name: 'appMain',
     data() {
+        return {
+            keyFeatures:[
+                {
+                    "featureImg":"fa-solid fa-layer-group",
+                    "feature":"Modular",
+                    "p":"Composed in a pseudo-latin language which more or less corresponds."
+                },
+                {
+                    /* "feature-img":"fa-solid fa-airplay", */
+                    "featureImg":"fa-solid fa-layer-group",
+                    "feature":"Responsive",
+                    "p":"Composed in a pseudo-latin language which more or less corresponds."
+                },
+                {
+                    /* "feature-img":"fa-regular fa-sparkle", */
+                    "featureImg":"fa-solid fa-layer-group",
+                    "feature":"Customizable",
+                    "p":"Composed in a pseudo-latin language which more or less corresponds."
+                },
+                {
+                    /* "feature-img":"fa-solid fa-maximize", */
+                    "featureImg":"fa-solid fa-layer-group",
+                    "feature":"Scalable",
+                    "p":"Composed in a pseudo-latin language which more or less corresponds."
+                },
 
+            ],
+            
+            plans:[
+                {
+                    type:"Basic",
+                    price:"9.00",
+                    p:"All the basics for the business that are just getting started",
+                    features:['Full Access','Enhanced Security','Source Files','1 Domain Free','Enhanced Security']
 
-        return {}
+                },
+                {
+                    type:"Business",
+                    price:"39.00",
+                    p:"Better for growing business that want more customers",
+                    /* feature:['Full Access','Enhanced Security','Source Files','1 Domain Free','Enhanced Security'] */
+
+                },
+                {
+                    type:"Enterprise",
+                    price:"79.00",
+                    p:"Advanced features for pros who need more customization",
+                    /* feature:['Full Access','Enhanced Security','Source Files','1 Domain Free','Enhanced Security'] */
+
+                },
+            ]    
+        }
     }
 }
 </script>
@@ -17,14 +66,16 @@ export default {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo error quos, consequatur veniam culpa reiciendis
                 adipisci consequuntur sed tempore sint quas illum deleniti. Labore, ex perferendis officia incidunt suscipit
                 laborum.</p>
-            <div class="features">
-                <div class="featur">
-                    <div class="feat_img mb-4"><font-awesome-icon icon="fa fa-layer-group" /></div>
-                    <h5>Modular</h5>
-                    <p class="mb-4 mt-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+
+            <div  class="features">
+                <div v-for="feature in keyFeatures"  class="featur">
+                    <div class="feat_img mb-4"> <font-awesome-icon :icon="feature.featureImg" /> </div>
+                    <h5>{{ feature.feature }}</h5>
+                    <p class="mb-4 mt-3">{{ feature.p }}</p>
                     <strong href="#"><span> Read more</span> <font-awesome-icon icon="fa-solid fa-chevron-right" size="2xs" class="mt-1" /></strong>
                 </div>
             </div>
+
         </div>
     </div>
     <!-- ---------------------------------------------------------------------------- -->
@@ -74,40 +125,25 @@ export default {
             <h3>Our rates for developer from landrick team</h3>
             <p class="mt-5 mb-5">Start working with <span class="blue">Landrick</span> that can provide everything you need to generate
                 <br> awereness,drive traffic,connect</p>
-            <div class="plan">
-                <div class="type mb-2 pe-4 ps-4">Basic</div>
-                <strong class="price"><font-awesome-icon icon="fa-solid fa-dollar-sign" size="sm" />9.00</strong>
+                <div class="plans">
+                    <div class="plan" v-for="plan in plans">
+                <div class="type mb-2 pe-4 ps-4">{{ plan.type }}</div>
+                <strong class="price"><font-awesome-icon icon="fa-solid fa-dollar-sign" size="sm" />{{ plan.price }}</strong>
                 <div class="mt-1 mb-3">Per Month</div>
-                <p>All the basics for the business that are just getting started</p>
+                <p>{{ plan.p }}</p>
                 <hr>
                 <ul>
-                    <li>
+                    <li v-for="feature in plans[0].features">
                         <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                        Full Access
+                        {{ feature }}
                     </li>
-                    <li>
-                        <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                        Enhanced Security
-                    </li>
-                    <li>
-                        <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                        Source Files
-                    </li>
-                    <li>
-                        <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                        1 Domanin Free
-                    </li>
-                    <li>
-                        <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                        Enhanced Security
-                    </li>
+                    
                 </ul>
                 <button class="mt-2"><strong>Buy Now</strong> </button>
                 <p class="mt-4">*No Credit card required</p>
-
-
-
             </div>
+                </div>
+            
         </div>
     </div>
     <!-- -------------------------------------------------------------------------------------- -->

@@ -3,14 +3,18 @@
 /* ------------------------------------------------------------------------- */
 .key_features {
     margin: 3rem 0;
+   
     .features {
-        width: 200px;
+        
+        display: flex;
+        justify-content: space-between;
+
+        .featur {
+            width: 180px;
         margin: 2rem 0;
         border: 1px solid $border;
         border-radius: 10px;
         padding: 1rem;
-
-        .featur {
             .feat_img {
                 background: $button;
                 width: 50px;
@@ -88,37 +92,41 @@
 /* ----------------------------------------------------------------------- */
 .our_rates {
     margin: 7rem 0;
-
-    .plan {
-        width: 250px;
-        border: 1px solid $border;
-        padding: 1rem;
-        border-radius: 10px;
-        box-shadow: 0 2px $p;
-        text-align: start;
-
-        .type {
-            background: $plan-btn;
-            color: $primary;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            width: fit-content;
-
-        }
-
-        .price {
-            font-size: 30px;
-        }
-
-        button {
-            width: 100%;
-            background: $primary;
-            color: white;
-            border-radius: 5px;
-            padding: 0.5rem;
-            box-shadow: 1px 1px $p;
+    .plans{
+        display: flex;
+        justify-content: space-between;
+        .plan {
+            width: 250px;
+            border: 1px solid $border;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px $p;
+            text-align: start;
+    
+            .type {
+                background: $plan-btn;
+                color: $primary;
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                width: fit-content;
+    
+            }
+    
+            .price {
+                font-size: 30px;
+            }
+    
+            button {
+                width: 100%;
+                background: $primary;
+                color: white;
+                border-radius: 5px;
+                padding: 0.5rem;
+                box-shadow: 1px 1px $p;
+            }
         }
     }
+
 }
 
 /* --------------------------------------------------- */
