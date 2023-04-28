@@ -16,6 +16,6 @@ import { faFacebookF, faGithub, faInstagram, faLinkedin, faLinkedinIn, faStackOv
 import { faCircleCheck, faCopyright, faEnvelope, faUser } from '@fortawesome/free-regular-svg-icons'
 
 library.add(faUserSecret,faStackOverflow,faUser,faGithub,faMagnifyingGlass,faChevronDown,faLayerGroup,faChevronRight,faCircleCheck
-    ,faArrowRight,faDollar,faEnvelope,faCopyright, faHeart,faFacebookF,faInstagram,faTwitter,faLinkedinIn,faLayerGroup,faWifi,faMaximize)
+    ,faArrowRight,faDollar,faEnvelope,faCopyright, faHeart,faFacebookF,faInstagram,faTwitter,faLinkedinIn,faLayerGroup,faWifi,faMaximize,)
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).mount('#app')

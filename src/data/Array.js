@@ -1,16 +1,7 @@
-<script >
-import appHeader from './components/appHeader.vue'
-import appMain from './components/appMain.vue'
-import appFooter from './components/appFooter.vue'
-/* import Array from './data/Array.js' */
-
-export default {
-  components: {
-    appHeader, appMain, appFooter
-  },
-  data() {
-    return {
-      keyFeatures: [
+export default{
+    data(){
+        return{
+            keyFeatures: [
                 {
                   "featureImg": "fa-solid fa-layer-group",
                   "feature": "Modular",
@@ -65,17 +56,8 @@ export default {
               company: ['About', 'Services', 'team', 'Pricing', 'Project', 'Careers', 'Blog', 'Login'],
               usefullLinks: ['Terms of service', 'Privacy Policy', 'Documentation', 'Changelog', 'Components'],
               payments: ['/img/american-ex.png', '/img/discover.png', '/img/master-card.png', '/img/paypal.png', '/img/visa.png'] 
-    }
-  }
+            
+        }
+    }   
 }
-</script>
 
-<template>
-  <appHeader :navbarLinks="navbarLinks" :partners="partners"></appHeader>
-  <appMain :keyFeatures="keyFeatures" :plans="plans"></appMain>
-  <appFooter :company="company" :usefullLinks="usefullLinks" :payments="payments"></appFooter>
-</template>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap');
-</style>

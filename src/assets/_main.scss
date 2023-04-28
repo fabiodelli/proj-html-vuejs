@@ -32,6 +32,9 @@
                 align-items: center;
                 gap: 0.3rem;
                 color: $primary;
+                .span:hover .span{
+                    background: $primary;
+                }
             }
 
         }
@@ -124,6 +127,10 @@
                 padding: 0.5rem;
                 box-shadow: 1px 1px $p;
             }
+        }
+        .plan:hover{
+           box-shadow: 0 3px $primary;
+           scale: 1.1;
         }
     }
 
