@@ -2,9 +2,10 @@
 export default {
     name: 'appHeader',
     data() {
-
-
-        return {}
+        return {
+            navbarLinks:['LANDING','PAGES','DOCS'],
+            partners:['/img/amazon.svg','/img/shopify.svg','/img/spotify.svg','/img/google.svg','/img/lenovo.svg','/img/paypal.svg']
+        }
     }
 }
 </script>
@@ -19,9 +20,7 @@ export default {
                 <div class="center">
                     <ul>
                         <li>HOME</li>
-                        <li>LANDING <font-awesome-icon icon="fa-solid fa-chevron-down" size="2xs" /></li>
-                        <li>PAGES <font-awesome-icon icon="fa-solid fa-chevron-down" size="2xs" /></li>
-                        <li>DOCS <font-awesome-icon icon="fa-solid fa-chevron-down" size="2xs" /></li>
+                        <li v-for="link in navbarLinks">{{ link }} <font-awesome-icon icon="fa-solid fa-chevron-down" size="2xs" /></li>
                     </ul>
                 </div>
                 <div class="right d-flex">
@@ -35,12 +34,12 @@ export default {
             </div>
             <div class="jumbo">
                 <div class="jumbo_left">
-                    <div class="dev">Development</div>
-                    <h1>A Complete Developer Toolset</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam!</p>
-                    <div>
-                        <button class="get_start">Get Started</button>
-                        <button class="Doc">Documentation</button>
+                    <div class="dev mb-3">Development</div>
+                    <h1 class="mb-3">A Complete <br> Developer Toolset</h1>
+                    <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam!</p>
+                    <div class="mb-3 btn">
+                        <div class="get_start">Get Started</div>
+                        <div class="Doc">Documentation</div>
                     </div>
                     <br>
                     <div>Current Version v2.6.0</div>
@@ -61,12 +60,7 @@ export default {
         </div>
 
         <div class="brand">
-            <img src="/img/amazon.svg" alt="">
-            <img src="/img/shopify.svg" alt="">
-            <img src="/img/spotify.svg" alt="">
-            <img src="/img/google.svg" alt="">
-            <img src="/img/lenovo.svg" alt="">
-            <img src="/img/paypal.svg" alt="">
+            <img v-for="partner in partners" :src="partner" alt="">
         </div>
 
     </div>

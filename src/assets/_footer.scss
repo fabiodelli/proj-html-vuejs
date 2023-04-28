@@ -1,0 +1,102 @@
+@use'./color' as *;
+
+.footer {
+    background: $footer;
+    padding: 2rem 0;
+
+
+    .container_60 {
+        color: $link-text;
+
+        p {
+            color: $link-text;
+        }
+
+        h5 {
+            color: white;
+        }
+
+        .columns {
+            margin: auto;
+            display: flex;
+
+            .col_a {
+                width: 30%;
+                padding: 1rem;
+
+                .logo {
+                    width: 100px;
+                }
+
+                .social{
+                    display: flex;
+                    .platform{
+                        width: 30px;
+                        aspect-ratio: 1;
+                        border: 1px solid white;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-right: 0.5rem;
+                        border-radius: 5px;
+                    }
+                }
+
+                .input_mail {
+
+                    .logo_mail {
+
+                        background: #27314f;
+                        color: white;
+                        border: none;
+
+                    }
+
+                    .mail {
+                        background: #27314f;
+                        color: white;
+                        border: none;
+                    }
+                }
+            }
+
+            .footer_btn {
+                background: #222e51;
+                color: $primary;
+                width: 100%;
+                border-radius: 5px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            
+
+            .col_b {
+                width: 20%;
+                padding: 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: $link-text;
+                }
+            }
+
+        }
+
+    }
+    hr{
+        color: white;
+    }
+
+    .footer_bottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 40px;
+            margin-right: 0.5rem;
+        }
+    }
+}

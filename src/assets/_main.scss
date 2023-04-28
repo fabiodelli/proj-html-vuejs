@@ -1,0 +1,152 @@
+@use'./color' as *;
+
+/* ------------------------------------------------------------------------- */
+.key_features {
+    margin: 3rem 0;
+    .features {
+        width: 200px;
+        margin: 2rem 0;
+        border: 1px solid $border;
+        border-radius: 10px;
+        padding: 1rem;
+
+        .featur {
+            .feat_img {
+                background: $button;
+                width: 50px;
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                border: 1px solid $border;
+                color: $primary;
+            }
+
+            strong {
+                display: flex;
+                align-items: center;
+                gap: 0.3rem;
+                color: $primary;
+            }
+
+        }
+    }
+}
+
+/* ------------------------------------------------------------------- */
+.quickstart {
+    margin: 7rem 0;
+
+    h6 {
+        color: $primary;
+    }
+
+    .img {
+        width: 500px;
+        height: 70px;
+        background: rgb(60, 72, 88);
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    span {
+
+        color: $primary ;
+    }
+}
+
+/* ------------------------------------------------------------- */
+.build_tools {
+    margin: 7rem 0;
+
+    .left {
+        width: 70%;
+        padding-right: 2rem;
+
+        button {
+            background: $primary;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        div {
+            color: $p;
+        }
+    }
+
+    .right {
+        width: 30%;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+/* ----------------------------------------------------------------------- */
+.our_rates {
+    margin: 7rem 0;
+
+    .plan {
+        width: 250px;
+        border: 1px solid $border;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px $p;
+        text-align: start;
+
+        .type {
+            background: $plan-btn;
+            color: $primary;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            width: fit-content;
+
+        }
+
+        .price {
+            font-size: 30px;
+        }
+
+        button {
+            width: 100%;
+            background: $primary;
+            color: white;
+            border-radius: 5px;
+            padding: 0.5rem;
+            box-shadow: 1px 1px $p;
+        }
+    }
+}
+
+/* --------------------------------------------------- */
+.want_to {
+    margin: 7rem 0;
+    .container_60 {
+        .input_mail {
+            position: relative;
+            input {
+                width: 500px;
+                height: 40px;
+                border-radius: 25px;
+                border: 1px solid $p;
+            }
+
+            button {
+                width: 100px;
+                height: 30px;
+                border-radius: 25px;
+                position: absolute;
+                top: 5px;
+                right: calc(50% - 245px);
+                background: $primary;
+                color: white;
+
+
+            }
+        }
+
+    }
+}

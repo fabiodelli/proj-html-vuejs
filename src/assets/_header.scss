@@ -68,19 +68,23 @@
                     padding: 0 5px;
                     
                 }
-                .get_start{
-                    background: $primary;
-                    color: white;
-                    padding: 0 10px;
-                    margin-right: 1rem;
-                    border-radius: 5px;
-                }
-                .Doc{
-                    background: white;
-                    color: $primary;
-                    padding: 0 10px;
-                    margin-right: 1rem;
-                    border-radius: 5px;
+                .btn{
+                    display: flex;
+                    .get_start{
+                        background: $primary;
+                        color: white;
+                        padding: 0.3rem 1rem;
+                        margin-right: 1rem;
+                        border-radius: 5px;
+                    }
+                    .Doc{
+                        background: white;
+                        color: $primary;
+                        padding: 0.3rem 1rem;
+                        margin-right: 1rem;
+                        border-radius: 5px;
+                        border: 1px solid $primary;
+                    }
                 }
             }
             .jumbo_right{
@@ -104,7 +108,7 @@
         z-index: 1;
         position: absolute;
         top: -2vh;
-        left: calc((100% - (804px - 4rem))/2);
+        left: calc((100% - (732px - 4rem))/2);
         img{
             width: 70px;
             margin-right: 4rem;

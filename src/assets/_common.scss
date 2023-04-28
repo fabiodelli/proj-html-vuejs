@@ -1,5 +1,30 @@
+@use'./color' as *;
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 13px;
+}
+
+.container_60 {
+    width: 60%;
+    margin: auto;
+}
+
+p {
+    color: $p;
+}
+
+ul {
+    padding: 0;
+
+    li {
+        list-style: none; 
+        color: $p; 
+        margin-bottom: 5px;
+    }
+}
+.blue{
+    color: $primary;
 }
