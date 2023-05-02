@@ -1,6 +1,5 @@
 export default{
-    data(){
-        return{
+   
             keyFeatures: [
                 {
                   "featureImg": "fa-solid fa-layer-group",
@@ -51,13 +50,13 @@ export default{
                 },
               ],
               navbarLinks: ['LANDING', 'PAGES', 'DOCS'],
-            
+              buildTools:['Digital marketing solutions','Our Talented & Experieced Marketing Agency','Create your own skin to match your brand'],
               partners: ['/img/amazon.svg', '/img/shopify.svg', '/img/spotify.svg', '/img/google.svg', '/img/lenovo.svg', '/img/paypal.svg'],
               company: ['About', 'Services', 'team', 'Pricing', 'Project', 'Careers', 'Blog', 'Login'],
               usefullLinks: ['Terms of service', 'Privacy Policy', 'Documentation', 'Changelog', 'Components'],
               payments: ['/img/american-ex.png', '/img/discover.png', '/img/master-card.png', '/img/paypal.png', '/img/visa.png'] 
             
         }
-    }   
-}
+       
+
 

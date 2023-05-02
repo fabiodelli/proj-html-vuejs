@@ -48,8 +48,9 @@
                     box-shadow: 0 3px $button;
                     color: $primary;
                 }
-                .toogle_nav:hover{
+                .toggle_nav:hover{
                     background: $primary;
+                    color:$button ;
                 }
             }
         }
@@ -71,7 +72,7 @@
                     padding: 0 5px;
                     
                 }
-                .btn{
+                .btn_jumbo{
                     display: flex;
                     .get_start{
                         background: $primary;
@@ -79,6 +80,10 @@
                         padding: 0.3rem 1rem;
                         margin-right: 1rem;
                         border-radius: 5px;
+                    }
+                    .get_start:hover{
+                       box-shadow: 2px 2px $button;
+                        
                     }
                     .Doc{
                         background: white;
@@ -88,6 +93,10 @@
                         border-radius: 5px;
                         border: 1px solid $primary;
                     }
+                    .Doc:hover{
+                        box-shadow: 2px 2px $button;
+                         
+                     }
                 }
             }
             .jumbo_right{

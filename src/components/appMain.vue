@@ -1,7 +1,9 @@
 <script>
+import { ribbonCorner } from '../../node_modules/ribbon-corner'
+ribbonCorner(options)
 export default {
     name: 'appMain',
-    props: { keyFeatures: Array, plans: Array },
+    props: { keyFeatures: Array, plans: Array, buildTools: Array },
     data() {
         return {
 
@@ -21,11 +23,13 @@ export default {
 
             <div class="features">
                 <div v-for="feature in keyFeatures" class="featur">
-                    <div class="feat_img mb-4"> <font-awesome-icon :icon="feature.featureImg" /> </div>
+                    <div class="feat_img mb-4"> <font-awesome-icon :icon="feature.featureImg" size="lg" /> </div>
                     <h5>{{ feature.feature }}</h5>
-                    <p class="mb-4 mt-3">{{ feature.p }}</p>
-                    <strong href="#"><span> Read more </span> <font-awesome-icon icon="fa-solid fa-chevron-right" size="2xs"
-                            class="mt-1" /></strong>
+                    <p class="mb-2 mt-3">{{ feature.p }}</p>
+                    <div class="read_more">
+                        <strong> Read more </strong>
+                        <font-awesome-icon icon="fa-solid fa-chevron-right" size="2xs" class="mt-1" />
+                    </div>
                 </div>
             </div>
 
@@ -37,9 +41,25 @@ export default {
         <div class="container_60 text-center">
             <h6 class="mb-2">Quickstart</h6>
             <h3 class="mb-4">Awesome isn't it? Let's dive in!</h3>
-            <p class="mb-5">Lorem ipsum dolor sit amet <span>consectetur</span> adipisicing elit. Quaerat dicta placeat, ad
-                doloribus aspernatur tempore.</p>
-            <div class="img mb-4"></div>
+            <p class="mb-5">Lorem ipsum dolor sit amet <span class="blue">consectetur</span> adipisicing elit. Quaerat dicta
+                placeat, ad
+                <br>
+                doloribus aspernatur tempore.
+            </p>
+            <div class="img mb-4">
+                <div class="nav_img">
+                    <div class="nav_container mb-4">
+                        <div class="select w_25">npm</div>
+                        <div class="w_25">nutget</div>
+                        <div class="w_25">spm</div>
+                        <div class="w_25">github</div>
+                    </div>
+                    <div class="command">
+                        <span class="text-white me-1"><span class="green">$ </span>npm install </span>
+                        <span class="text-white"><span class="green">-g </span>claps.js</span>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
@@ -51,18 +71,11 @@ export default {
                 <h3 class="mb-4">Build tools and <br> extensive documenatation</h3>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime necessitatibus aspernatur cum eos
                     sapiente ut magnam. Laudantium voluptate inventore nostrum?</p>
-                <div>
+                <div v-for="point in buildTools">
                     <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                    Digital Marketing solutions for tomorrow
+                    {{ point }}
                 </div>
-                <div>
-                    <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                    Our Talented $ experienced Marketing Agency
-                </div>
-                <div>
-                    <font-awesome-icon class="blue" icon="fa-regular fa-circle-check" />
-                    Create your own skin to matvh your brand
-                </div>
+
 
                 <button class="mt-3"><strong>Read More </strong><font-awesome-icon icon="fa-solid fa-arrow-right" />
                 </button>
@@ -97,6 +110,7 @@ export default {
                     </ul>
                     <button class="mt-2"><strong>Buy Now</strong> </button>
                     <p class="mt-4">*No Credit card required</p>
+                    
                 </div>
             </div>
 

@@ -27,16 +27,22 @@
                 color: $primary;
             }
 
-            strong {
+            .read_more {
+                background: white;
                 display: flex;
                 align-items: center;
                 gap: 0.3rem;
                 color: $primary;
-                .span:hover .span{
-                    background: $primary;
-                }
+                width: fit-content;
+                padding: 0.5rem;
+                border-radius: 5px;
             }
-
+            .read_more:hover{
+                background: $primary;
+                color: white;
+                
+            }
+            
         }
     }
 }
@@ -50,17 +56,43 @@
     }
 
     .img {
-        width: 500px;
-        height: 70px;
+        width: 600px;
         background: rgb(60, 72, 88);
         border-radius: 10px;
         margin: auto;
+        padding: 1.5rem;
+        .nav_img{
+            height: 100%;
+            
+            
+            
+            
+            .nav_container{
+                display: flex;
+                align-items: center;
+                color: white;
+                border: 2px solid $img_quikstart;
+                border-radius: 5px;
+                background: $img_quikstart;
+                
+                .w_25{
+                    width: 25%;
+                    padding: 0.5rem;
+                }
+                .select{
+                    background: rgb(60, 72, 88);
+                    border-radius: 5px;
+                }
+            }
+            .command{
+                display: flex;
+                justify-content: start;
+            }
+            
+        }
     }
 
-    span {
 
-        color: $primary ;
-    }
 }
 
 /* ------------------------------------------------------------- */
@@ -68,7 +100,7 @@
     margin: 7rem 0;
 
     .left {
-        width: 70%;
+        width: 60%;
         padding-right: 2rem;
 
         button {
@@ -84,7 +116,7 @@
     }
 
     .right {
-        width: 30%;
+        width: 40%;
 
         img {
             max-width: 100%;

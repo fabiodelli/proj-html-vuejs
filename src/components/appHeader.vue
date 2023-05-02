@@ -4,8 +4,7 @@ export default {
     props:{ navbarLinks:Array,partners:Array},
     data() {
         return {
-            navbarLinks:['LANDING','PAGES','DOCS'],
-            partners:['/img/amazon.svg','/img/shopify.svg','/img/spotify.svg','/img/google.svg','/img/lenovo.svg','/img/paypal.svg']
+            
         }
     }
 }
@@ -38,7 +37,7 @@ export default {
                     <div class="dev mb-3">Development</div>
                     <h1 class="mb-3">A Complete <br> Developer Toolset</h1>
                     <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, totam!</p>
-                    <div class="mb-3 btn">
+                    <div class="mb-3 btn_jumbo">
                         <div class="get_start">Get Started</div>
                         <div class="Doc">Documentation</div>
                     </div>
